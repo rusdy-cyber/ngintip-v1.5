@@ -1,0 +1,4 @@
+from wafw00f.main import WAFW00F
+
+waf = WAFW00F("http://example.com")
+print(dir(waf))

@@ -1,17 +1,17 @@
-from wafw00f.main import WafW00F
+from wafw00f.main import WAFW00F
 
 def scan_waf(url):
     print(f"Memindai WAF untuk website '{url}' menggunakan wafw00f...")
 
     try:
-        # Inisialisasi WafW00F dengan URL yang diberikan
-        waf = WafW00F(url)
+        # Inisialisasi WAFW00F dengan URL yang diberikan
+        waf = WAFW00F(url)
         
         # Lakukan pemindaian
         waf.identwaf()
         
-        # Mendapatkan hasil pemindaian
-        result = waf.result
+        # Dapatkan hasil pemindaian
+        result = waf.result_dict
         
         if result:
             print("Hasil pemindaian wafw00f:")

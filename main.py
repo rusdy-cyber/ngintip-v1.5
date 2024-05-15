@@ -1,4 +1,4 @@
-from tkinter.tix import Form
+from tkinter import ttk
 from tools.color import cetak_teks_berwarna
 from tools.geo_info import print_info_geo_with_input
 from tools.port_scan import scan_port_with_input
@@ -68,14 +68,16 @@ while True:
             print("Perintah selesai.")
             sys.exit()
     elif jawaban == '4':
-        url =  input("\nEnter dmain untuk pemindaian wbsite") 
+        url =  input("\nEnter domain untuk pemindaian website: ") 
         scan_website(url)
+        pilihan_lanjut = input("\nApakah Anda ingin melanjutkan? (y/n): ")
         if pilihan_lanjut.lower() != 'y':
             print("Perintah selesai.")
             sys.exit()
     elif jawaban == '5':
-        url = input("\nEnter domain untuk pemindaiyan Waf")
+        url = input("\nEnter domain untuk pemindaian WAF: ")
         scan_waf(url)
+        pilihan_lanjut = input("\nApakah Anda ingin melanjutkan? (y/n): ")
         if pilihan_lanjut.lower() != 'y':
             print("Perintah selesai.")
             sys.exit()
