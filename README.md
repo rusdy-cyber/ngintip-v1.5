@@ -29,26 +29,41 @@ python3 main.py
 - Geo IP ADdress
 - scan port
 - subdomain
-- nmap
 - what web
 - scan waf
 ### home
 <p  align="center">
-      <img src="https://github.com/rusdy-cyber/Ngintip/blob/main/images/home.png" width="500px"> 
+      <img src="https://github.com/rusdy-cyber/ngintip-v1.5/blob/main/images/home.png" width="500px"> 
 </p>
 
 ### Geo IP
 <p  align="center">
-      <img src="https://github.com/rusdy-cyber/Ngintip/blob/main/images/1.png" width="500px"> 
+      <img src="https://github.com/rusdy-cyber/ngintip-v1.5/blob/main/images/geo-ip.png" width="500px"> 
 </p>
 
 ### Port scan
 <p  align="center">
-      <img src="https://github.com/rusdy-cyber/Ngintip/blob/main/images/2.png" width="500px"> 
+      <img src="https://github.com/rusdy-cyber/ngintip-v1.5/blob/main/images/scan-port.png" width="500px"> 
 </p>
 
+### subdomain
+<p  align="center">
+      <img src="https://github.com/rusdy-cyber/ngintip-v1.5/blob/main/images/subdomain.png" width="500px"> 
+</p>
+
+### what web
+<p  align="center">
+      <img src="https://github.com/rusdy-cyber/ngintip-v1.5/blob/main/images/whatweb.png" width="500px"> 
+</p>
+
+### scan waf
+<p  align="center">
+      <img src="https://github.com/rusdy-cyber/ngintip-v1.5/blob/main/images/waf.png" width="500px"> 
+</p>
+
+
 ### contibute
-- rizki
-- novan
+- shadow abys
+- TC01
 
 
