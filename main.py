@@ -6,33 +6,26 @@ from tools.subdomain_scan import scan_subdomain
 from tools.what_web import scan_website
 from tools.scan_waf import scan_waf 
 import sys
+import random
+import os
+
+def read_file(filepath):
+    with open(filepath, 'r', encoding='utf-8') as file:
+        return file.read()
+    
+art_folder = 'art'
+
+art = read_file(os.path.join(art_folder, 'art1.txt'))
+art2 = read_file(os.path.join(art_folder, 'art2.txt'))
+art3 = read_file(os.path.join(art_folder, 'art3.txt'))
+art4 = read_file(os.path.join(art_folder, 'art4.txt'))
+art5 = read_file(os.path.join(art_folder, 'art5.txt'))
+art6 = read_file(os.path.join(art_folder, 'art6.txt'))
+
+def get_random_art():
+    return random.choice([art,art2,art3,art4,art5,art6])
 
 teks = """
-         ..................
-                           ...$$$..
-                             ....
-                        .....    ..1x$.
-                  ......         ...1$.
-         .........    ...............$.
-                          ........
-                        ..  .........x.
-                      ...             0Xx0c:..  ...
-                    ..   .          .0n%,:&0Xx0c:..,,
-                 ....             .0n%             :00;
-                .               .0n%                 :00;
-                                .0n%                  ':00;.
-                                 .0n%                    .0;.
-                                   .0n
-                                    .0n;
-                                      oodl0n;...   ...
-                                         ..'.;;oodl0n;...
-                                                   ..'.;;...
-                                                        ..'...
-                                                         .d   .;.
-                                                          .d   ;: .
-                                                           .l
-                                                            .l
-                                                            .o 
 Information Gathering tools ngintip V1.5
 1. Informasi Geografis IP Address
 2. Scan Port
@@ -43,6 +36,7 @@ Information Gathering tools ngintip V1.5
 """
 
 while True:
+    cetak_teks_berwarna(get_random_art())
     cetak_teks_berwarna(teks)
 
     jawaban = input("(1/2/3/4/5/6/7): ")
